@@ -1,0 +1,11 @@
+.title-important {
+	text-align: center;
+	border: 1px solid #003;
+	padding: 20px 50px 20px 50px;
+	background-color: #889;
+}
+
+
+.title-important:hover {
+	color: darkblue;
+}
