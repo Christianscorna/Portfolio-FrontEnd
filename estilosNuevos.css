@@ -1,0 +1,26 @@
+body {
+	background: #43C6AC; 
+	background: -webkit-linear-gradient(to bottom, #191654, #43C6AC);
+	background: linear-gradient(to bottom, #191654, #43C6AC); 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.slide {
+	border: 3px solid #000;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.imgClass {
+	min-height: 250px;
+}
+
+.actives {
+	padding: 0px 15px;
+}
+
+.actives:hover {
+	text-shadow: 0px 0px 10px #FFF;
+	border: 1px solid #999;
+}
