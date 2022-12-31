@@ -117,3 +117,18 @@
 	font-size: 30px;
 	font-weight: bold;
 }
+
+.imgClassCard {
+	width: 96px;
+	height: 96px;
+	margin: 20px 0px 10px 0px;
+}
+
+.card {
+	justify-content: center;
+	align-items: center;
+}
+
+.card:hover {
+	opacity: 0.8;
+}
