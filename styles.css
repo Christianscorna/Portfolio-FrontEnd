@@ -7,10 +7,78 @@
 	border-radius: 50%;
 }
 
-@media (max-width: 590px) {
+@media ( max-width: 576px ) {
 	.imgClass {
 		width: 80px;
 		height: 80px;
 		margin-top: -65px;
+	}
+}
+
+
+@media ( max-width: 576px ) {
+	.about_me {
+		width: 60px;
+		height: 60px;
+		margin: 8px 45%;
+	}	
+}
+
+.detalles {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu {
+	position: relative;
+	border: 1px solid cyan;
+	border-radius: 20px;
+}
+
+.menu div {
+	position: relative;
+	width: 0;
+	height: 5px;
+	background-color: cyan;
+}
+
+#html-menu {
+	animation: html-var 3s forwards;
+}
+
+@keyframes html-var {
+	100% {
+		width: 80%;
+	}
+}
+
+#java-menu {
+	animation: java-var 3s forwards;
+}
+
+@keyframes java-var {
+	100% {
+		width: 20%;
+	}
+}
+
+#angular-menu {
+	animation: angular-var 3s forwards;
+}
+
+@keyframes angular-var {
+	100% {
+		width: 10%;
+	}
+}
+
+#ingles-menu {
+	animation: ingles-var 3s forwards;
+}
+
+@keyframes ingles-var {
+	100% {
+		width: 75%;
 	}
 }
