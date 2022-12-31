@@ -53,6 +53,26 @@
 	}
 }
 
+#css-menu {
+	animation: css-var 3s forwards;
+}
+
+@keyframes css-var {
+	100% {
+		width: 60%;
+	}
+}
+
+#js-menu {
+	animation: javascript-var 3s forwards;
+}
+
+@keyframes javascript-var {
+	100% {
+		width: 50%;
+	}
+}
+
 #java-menu {
 	animation: java-var 3s forwards;
 }
@@ -60,6 +80,16 @@
 @keyframes java-var {
 	100% {
 		width: 20%;
+	}
+}
+
+#ruby-menu {
+	animation: ruby-var 3s forwards;
+}
+
+@keyframes ruby-var {
+	100% {
+		width: 40%;
 	}
 }
 
@@ -81,4 +111,9 @@
 	100% {
 		width: 75%;
 	}
+}
+
+.subtitle {
+	font-size: 30px;
+	font-weight: bold;
 }
