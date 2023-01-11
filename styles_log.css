@@ -110,3 +110,8 @@
 	background-color: #0a0a0a;
 	border-radius: 12px;
 }
+
+.createOne {
+	display: inline-block;
+	margin-right: 10px;
+}
