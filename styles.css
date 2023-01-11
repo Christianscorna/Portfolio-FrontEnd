@@ -52,6 +52,12 @@
 	}
 }
 
+@media ( max-width: 500px ) {
+	p {
+		text-align: justify;
+	}
+}
+
 .detalles {
 	width: 100%;
 	display: flex;
@@ -148,6 +154,16 @@
 @keyframes photo-var {
 	100% {
 		width: 70%;
+	}
+}
+
+#bootstrap-menu {
+	animation: bootstrap-var 3s forwards;
+}
+
+@keyframes bootstrap-var {
+	100% {
+		width: 60%;
 	}
 }
 
