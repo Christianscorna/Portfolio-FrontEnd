@@ -13,55 +13,52 @@
 </head>
 
 <body>
-	<h1 class="display-5 my-3 text-center">!Regístrate!</h1>
+	<h1 class="display-5 my-3 text-center">Iniciar sesión</h1>
 
 <div class=" access__form">
   
-  <div class="row">
+<!-- Logo Argentina Programa -->
+<img src="Imagenes/APlogo.png" class="img-fluid">
 
-  	<!-- Logo Argentina Programa -->
-  	<img src="Imagenes/APlogo.png" class="img-fluid">
-  		<form class="form" id="form">
+  	<form class="form" id="form">
 
-  		<!-- User name -->
-  		<div class="form__group" id="user__group">
-  		  <label for="usuario" class="form__label">Usuario</label>
-  			<div class="form__group-input">
-  			  <input type="text" name="form__input" name="usuario" class="form__input" id="usuario" placeholder="Ingrese su nombre de usuario">
-  			  <i class="fa-sharp fa-solid fa-circle-xmark form__validation-state form__validation-group"></i>
-  			  <p class="form__input-wrong">
+  	<!-- User name -->
+  	<div class="form__group" id="user__group">
+  		<label for="usuario" class="form__label">Usuario</label>
+  		<div class="form__group-input">
+  			<input type="text" name="form__input" name="usuario" class="form__input" id="usuario" placeholder="Ingrese su nombre de usuario">
+  			<i class="fa-sharp fa-solid fa-circle-xmark form__validation-state form__validation-group"></i>
+  			<p class="form__input-wrong">
   				El usuario debe tener al menos 8 dígitos; Números, letras y guión bajo.
-  			  </p>
-  			</div>
-  		</div>
-
-  		<!-- password -->
-  		<div class="form__group" id="password__group">
-  		  <label for="password" class="form__label">Contraseña</label>
-  			<div class="form__group-input">
-  			  <input type="password" name="form__input" name="password" class="form__input" id="password" placeholder="Ingrese su contraseña">
-  			  <i class="fa-sharp fa-solid fa-circle-xmark form__validation-state form__validation-group"></i>
-  			  <p class="form__input-wrong">
-  			  	La contraseña debe tener al menos 8 dígitos; Números, letras y guión bajo.
-  			  </p>
-  			</div>
-  		</div>
-
-  		<!-- Message if the user is bad -->
-  		<div class="form__message" id="form__message">
-  			<p>
-  				<i class="fa-solid fa-bomb"></i> <b>Error</b>: Asegúrate de completar los campos correctamente. 
   			</p>
   		</div>
+  	</div>
 
-  		<button type="submit" class="access-button my-3">Ingresar</button>
-  		</form>
+  	<!-- password -->
+  	<div class="form__group" id="password__group">
+  		<label for="password" class="form__label">Contraseña</label>
+  		<div class="form__group-input">
+  			<input type="password" name="form__input" name="password" class="form__input" id="password" placeholder="Ingrese su contraseña">
+  			<i class="fa-sharp fa-solid fa-circle-xmark form__validation-state form__validation-group"></i>
+  			<p class="form__input-wrong">
+  			  	La contraseña debe tener al menos 8 dígitos; Números, letras y guión bajo.
+  			</p>
+  		</div>
+  	</div>
 
-      <div class="link">
-        <p class="createOne">¿No tenés una cuenta? </p><a href="login_dos.html">Create una</a>
-      </div>
+  	<!-- Message if the user is bad -->
+  	<div class="form__message" id="form__message">
+  		<p>
+  			<i class="fa-solid fa-bomb"></i> <b>Error</b>: Asegúrate de completar los campos correctamente. 
+  		</p>
+  	</div>
 
-  </div>		
+  	<button type="submit" class="access-button my-3">Ingresar</button>
+  	</form>
+
+    <div class="link">
+    	<p class="createOne">¿No tenés una cuenta? </p><a href="login_dos.html">Create una</a>
+    </div>		
 </div>
 
 <!-- Footer -->
