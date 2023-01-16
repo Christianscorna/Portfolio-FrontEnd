@@ -40,6 +40,7 @@
 
 .form__input-wrong-active {
 	display: block;
+	color: #FFF;
 }
 
 .form__validation-group {

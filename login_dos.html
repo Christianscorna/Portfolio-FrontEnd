@@ -23,27 +23,22 @@
     <form class="form" id="form">
 
         <div class="row">
-            <!-- User name -->
+            <!-- User -->
             <div class="form__group col-sm-12 col-md-6 col-lg-6" id="user__group">
                 <label for="usuario" class="form__label">Usuario</label>
                 <div class="form__group-input">
-                    <input type="text" name="form__input" name="usuario" class="form__input" id="usuario" placeholder="Nombre de usuario">
-                    <i class="fa-sharp fa-solid fa-circle-xmark form__validation-state form__validation-group"></i>
-                    <p class="form__input-wrong">
-                        El usuario debe tener al menos 8 dígitos; Números, letras y guión bajo.
-                    </p>
+                    <input type="text" name="usuario" class="form__input" id="usuario" placeholder="Nombre de usuario" required>
                 </div>
+                <p class="form__input-wrong">El usuario debe tener al menos 8 dígitos: Números, letras y guión bajo.</p>
             </div>
 
-            <div class="form__group col-sm-12 col-md-6 col-lg-6" id="user__group">
-                <label for="usuario" class="form__label">Repita su usuario</label>
+            <!-- User name -->
+            <div class="form__group col-sm-12 col-md-6 col-lg-6" id="name__group">
+                <label for="usuario" class="form__label">Nombre</label>
                 <div class="form__group-input">
-                    <input type="text" name="form__input" name="usuario" class="form__input" id="usuario" placeholder="Nombre de usuario">
-                    <i class="fa-sharp fa-solid fa-circle-xmark form__validation-state form__validation-group"></i>
-                    <p class="form__input-wrong">
-                        El usuario debe tener al menos 8 dígitos; Números, letras y guión bajo.
-                    </p>
+                    <input type="text" name="nombre" class="form__input" id="usuario" placeholder="Nombre completo" required>
                 </div>
+                <p class="form__input-wrong">Complete con su nombre. No admite carácteres especiales.</p>
             </div>
         </div>
   
@@ -52,31 +47,19 @@
             <div class="form__group col-sm-12 col-md-6 col-lg-6" id="password__group">
                 <label for="password" class="form__label">Contraseña</label>
                 <div class="form__group-input">
-                    <input type="password" name="form__input" name="password" class="form__input" id="password" placeholder="Contraseña">
-                    <i class="fa-sharp fa-solid fa-circle-xmark form__validation-state form__validation-group"></i>
-                    <p class="form__input-wrong">
-                      La contraseña debe tener al menos 8 dígitos; Números, letras y guión bajo.
-                    </p>
+                    <input type="password"  name="password" class="form__input" id="password" placeholder="Contraseña" required>
                 </div>
+                <p class="form__input-wrong">La contraseña debe tener entre 4 y 12 carácteres: Números, letras y guión bajo.</p>
             </div>
 
-            <div class="form__group col-sm-12 col-md-6 col-lg-6" id="password__group">
+            <!-- re-password -->
+            <div class="form__group col-sm-12 col-md-6 col-lg-6" id="re-password__group">
                 <label for="password" class="form__label">Repita su contraseña</label>
                 <div class="form__group-input">
-                    <input type="password" name="form__input" name="password" class="form__input" id="password" placeholder="Contraseña">
-                    <i class="fa-sharp fa-solid fa-circle-xmark form__validation-state form__validation-group"></i>
-                    <p class="form__input-wrong">
-                      La contraseña debe tener al menos 8 dígitos; Números, letras y guión bajo.
-                    </p>
-                </div>
+                    <input type="password" name="re-password" class="form__input" id="re-password" placeholder="Contraseña" required>
+                </div> 
+                <p class="form__input-wrong">Las contraseñas deben ser iguales.</p>
             </div>
-        </div>
-
-        <!-- Message if the user is bad -->
-        <div class="form__message" id="form__message">
-            <p>
-                <i class="fa-solid fa-bomb"></i> <b>Error</b>: Asegúrate de completar los campos correctamente. 
-            </p>
         </div>
   
         <button type="submit" class="access-button my-3">Registrarme</button>
