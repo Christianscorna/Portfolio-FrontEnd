@@ -9,7 +9,7 @@ const inputs = document.querySelectorAll("#form input") ;
 const validation = {
 	user: /^[a-zA-Z0-9\_\-\.]{4,16}$/, //El usuario puede tener un monton de cosas ejem: Use_r.066
 	userName: /^[a-zA-Z\s]{1,40}$/ , //El nombre de usuario no puede tener tantas cosas ejem: Gerardo Gimenez
-	passwordUser: /^.{4,12}$/ //La contraseña no tiene limitaciones ejem: 0hg55__
+	passwordUser: /^.{4,12}$/ //La contraseña no tiene limitaciones de carácateres ejem: 0hg55__
 }
 
 function validateSection ( expresion, input, section ) {
@@ -22,9 +22,13 @@ function validateSection ( expresion, input, section ) {
 	}
 }
 
-function validatePassword () {
-	if ( form. ) {
-		
+function validatePassword (  ) {
+	if ( form.password.value !== form.confirm.value ) {
+		document.getElementById( "confirm__group" ).classList.add( "form__group-incorrect" );
+		document.querySelector( "#confirm__group .form__input-wrong" ).classList.add( "form__input-wrong-active" );
+	} else { 
+		document.getElementById( "confirm__group" ).classList.remove( "form__group-incorrect" );
+		document.querySelector( "#confirm__group .form__input-wrong" ).classList.remove( "form__input-wrong-active" );
 	}
 }
 
@@ -43,14 +47,14 @@ function formValidate ( ev ) {
 			validatePassword();
 		break;
 
-		case "re-password":
+		case "confirm":
 			validatePassword();
 		break;
 	}
 } ;
 
 inputs.forEach( ( input ) => {
-	input.addEventListener( "keyup", formValidate );
+	//input.addEventListener( "keyup", formValidate );
 	input.addEventListener( "blur", formValidate );
 } ) ;
 
