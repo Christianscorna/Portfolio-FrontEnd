@@ -1,1 +1,188 @@
-/* You can add global styles to this file, and also import other style files */
+.navLink {
+	border: 1px solid #fff;
+	border-radius: 10px;
+	opacity: 0.7;
+}
+
+.navLink:hover {
+	opacity: 1;
+}
+
+.login {
+	border: 1px solid #ffff56;
+	border-radius: 10px;
+}
+
+.login:hover {
+	background-color: #ffff56;
+	text-shadow: 0px 0px 10px #0a0a0a;
+}
+
+.carousel-item {
+	max-height: 450px;
+}
+
+.imgClass {
+	margin-top: -110px;
+	border-radius: 50%;
+}
+
+@media ( max-width: 576px ) {
+	.imgClass {
+		width: 80px;
+		height: 80px;
+		margin-top: -65px;
+	}
+}
+
+
+@media ( max-width: 768px ) {
+	.about_me {
+		width: 60px;
+		height: 60px;
+		margin: 8px 45%;
+	}	
+}
+
+@media ( max-width: 992px ) {
+	.nav-link {
+		text-align: center;
+		justify-content: center;
+		margin-bottom: 6px;
+	}
+}
+
+@media ( max-width: 500px ) {
+	p {
+		text-align: justify;
+	}
+}
+
+.detalles {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu {
+	position: relative;
+	border: 1px solid cyan;
+	border-radius: 20px;
+}
+
+.menu div {
+	position: relative;
+	width: 0;
+	height: 5px;
+	background-color: cyan;
+}
+
+#html-menu {
+	animation: html-var 3s forwards;
+}
+
+@keyframes html-var {
+	100% {
+		width: 80%;
+	}
+}
+
+#css-menu {
+	animation: css-var 3s forwards;
+}
+
+@keyframes css-var {
+	100% {
+		width: 60%;
+	}
+}
+
+#js-menu {
+	animation: javascript-var 3s forwards;
+}
+
+@keyframes javascript-var {
+	100% {
+		width: 50%;
+	}
+}
+
+#java-menu {
+	animation: java-var 3s forwards;
+}
+
+@keyframes java-var {
+	100% {
+		width: 20%;
+	}
+}
+
+#ruby-menu {
+	animation: ruby-var 3s forwards;
+}
+
+@keyframes ruby-var {
+	100% {
+		width: 40%;
+	}
+}
+
+#angular-menu {
+	animation: angular-var 3s forwards;
+}
+
+@keyframes angular-var {
+	100% {
+		width: 10%;
+	}
+}
+
+#ingles-menu {
+	animation: ingles-var 3s forwards;
+}
+
+@keyframes ingles-var {
+	100% {
+		width: 75%;
+	}
+}
+
+#photoshop-menu {
+	animation: photo-var 3s forwards;
+}
+
+@keyframes photo-var {
+	100% {
+		width: 70%;
+	}
+}
+
+#bootstrap-menu {
+	animation: bootstrap-var 3s forwards;
+}
+
+@keyframes bootstrap-var {
+	100% {
+		width: 60%;
+	}
+}
+
+.subtitle {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.imgClassCard {
+	width: 96px;
+	height: 96px;
+	margin: 20px 0px 10px 0px;
+}
+
+.card {
+	justify-content: center;
+	align-items: center;
+}
+
+.card:hover {
+	opacity: 0.8;
+}
