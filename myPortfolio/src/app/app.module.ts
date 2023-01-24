@@ -11,6 +11,9 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
 import { FooterComponent } from './components/footer/footer.component';
 import { NavBarMenuComponent } from './components/nav-bar-menu/nav-bar-menu.component';
 
+import {HttpClientModule} from '@angular/common/http';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,8 @@ import { NavBarMenuComponent } from './components/nav-bar-menu/nav-bar-menu.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

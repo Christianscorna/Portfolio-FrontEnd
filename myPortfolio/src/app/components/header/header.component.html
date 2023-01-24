@@ -1,24 +1,22 @@
 <!-- Slider automático banner -->
-
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="z-index: -1">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./assets/Imagenes/img_dos.png" class="d-block w-100">
+        <img [src]="myPortfolio.backImage1" class="d-block w-100">
       </div>
   
       <div class="carousel-item">
-        <img src="./assets/Imagenes/img_tres.png" class="d-block w-100">
+        <img [src]="myPortfolio.backImage2" class="d-block w-100">
       </div>
     </div>
   </div>
   
   <!-- Autorretrato -->
-  
   <div class="container">
     
-    <img src="./assets/Imagenes/autorretrato.png" class="imgClass">
-    <h1 class="display-3">Christian Scornaienchi</h1>
-    <span>Tandil, Provincia de Buenos Aires</span>
+    <img [src]="myPortfolio.image" class="imgClass">
+    <h1 class="display-3">{{myPortfolio.name}}</h1>
+    <span>{{myPortfolio.ubication}}</span>
   
   <hr>
   </div>

@@ -9,8 +9,12 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 export class HeaderComponent {
 
   constructor( private datosPortfolio: PortfolioService ) {}
+    myPortfolio: any;
 
     ngOnInit(): void {
-      this.datosPortfolio.obtenerDatos();
+      this.datosPortfolio.obtenerDatos().subscribe( data => {
+        console.log( data );
+        this.myPortfolio = data;
+      } ) ;
     }
 }
