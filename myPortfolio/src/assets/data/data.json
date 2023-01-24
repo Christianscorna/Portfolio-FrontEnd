@@ -5,6 +5,7 @@
     "image": "./assets/Imagenes/autorretrato.png",
     "ubication": "Buenos Aires, Argentina",
     "about": "Soy estudiante de Ingeniería en Sistemas de la Facultad de Ciencias Exactas de la Universidad Nacional del Centro, Tandil (Pcia de Buenos Aires). Me gusta la informática y la programación. También me gusta mucho el arte, los colores y el ajedréz entre otras cosas.",
+    
     "experience": [{
         "position": null,
         "company": null,
@@ -20,8 +21,7 @@
         "title": "",
         "img": "./assets/Imagenes/poli.png",
         "career": "Artes visuales",
-        "description": "Estudié y realicé el secundario en la escuela Polivalente, o ESEA Nro 1 (Escuela Secundaria Especializada en Artes) de Tandil. Elegí la orientación en Artes visuales por lo que tengo título de Realizador en Artes visuales con especialidad en producción - pintura. Pinté varios cuadros, en mi facebook, podrán encontrar algo de lo que hago. Además me encanta la fotografía, en mi instagram podrán encontrar algunas fotos que voy subiendo como proyecto personal de fotografía independiente.",
-        "score": 0,
+        "description": "Estudié y realicé el secundario en la escuela ESEA Nro 1 (Ex polivalente de arte) de Tandil. Elegí la orientación en Artes visuales por lo que tengo título de Realizador en Artes Visuales con Especialidad en Producción Pintura. Pinté varios cuadros y tambien me gusta la fotografía, en mis redes podrán ver algo de lo que hago.",
         "start": "20/03/2016",
         "end": "30/11/2021"
     },
@@ -31,7 +31,6 @@
         "img": "./assets/Imagenes/EMI.png",
         "career": "Curso de inglés",
         "description": "Realicé y aprobé sastifactoriamente los 5 niveles que el departamento de idiomas ofrece para sus estudiantes",
-        "score": 0,
         "start": "20/03/2017",
         "end": "30/11/2021"
     },
@@ -41,18 +40,7 @@
         "img": "./assets/Imagenes/FDCE.png",
         "career": "Ingeniería en sistemas",
         "description": "Actualmente me encuantro cursando el primer año de la carrera de Ingeniería en sistemas",
-        "score": 0,
         "start": "01/04/2022",
         "end": "actualidad"
-    }],
-
-    "aptitudes": [{
-        "name": "Compañerismo y trabajo en equipo"
-    },
-    {
-        "name": "Capacidad de liderazgo"
-    },
-    {
-        "name": "organizacion"
     }]
 }
