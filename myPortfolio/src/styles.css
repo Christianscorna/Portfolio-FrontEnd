@@ -77,96 +77,6 @@
 	background-color: cyan;
 }
 
-#html-menu {
-	animation: html-var 3s forwards;
-}
-
-@keyframes html-var {
-	100% {
-		width: 80%;
-	}
-}
-
-#css-menu {
-	animation: css-var 3s forwards;
-}
-
-@keyframes css-var {
-	100% {
-		width: 60%;
-	}
-}
-
-#js-menu {
-	animation: javascript-var 3s forwards;
-}
-
-@keyframes javascript-var {
-	100% {
-		width: 50%;
-	}
-}
-
-#java-menu {
-	animation: java-var 3s forwards;
-}
-
-@keyframes java-var {
-	100% {
-		width: 20%;
-	}
-}
-
-#ruby-menu {
-	animation: ruby-var 3s forwards;
-}
-
-@keyframes ruby-var {
-	100% {
-		width: 40%;
-	}
-}
-
-#angular-menu {
-	animation: angular-var 3s forwards;
-}
-
-@keyframes angular-var {
-	100% {
-		width: 30%;
-	}
-}
-
-#ingles-menu {
-	animation: ingles-var 3s forwards;
-}
-
-@keyframes ingles-var {
-	100% {
-		width: 75%;
-	}
-}
-
-#photoshop-menu {
-	animation: photo-var 3s forwards;
-}
-
-@keyframes photo-var {
-	100% {
-		width: 70%;
-	}
-}
-
-#bootstrap-menu {
-	animation: bootstrap-var 3s forwards;
-}
-
-@keyframes bootstrap-var {
-	100% {
-		width: 60%;
-	}
-}
-
 .subtitle {
 	font-size: 30px;
 	font-weight: bold;
@@ -186,3 +96,54 @@
 .card:hover {
 	opacity: 0.8;
 }
+
+
+/*Animaciones de los porcentajes de carga*/
+/*Lo bueno que tiene este método es que aunque tengas 60 tecnologías para agregar,
+las animaciones son muchas menos :), lo cual es muy positivo ya que ahorra código*/
+#noventa-menu{
+	animation: nov-var 3s forwards;
+}
+@keyframes nov-var {
+	100% {
+		width: 90%;
+	}
+}
+
+#ochenta-menu {
+	animation: och-var 3s forwards;
+}
+@keyframes och-var {
+	100% {
+		width: 80%;
+	}
+}
+
+#setenta-menu {
+	animation: set-var 3s forwards;
+}
+@keyframes set-var {
+	100% {
+		width: 70%;
+	}
+}
+
+#sesenta-menu {
+	animation: ses-var 3s forwards;
+}
+@keyframes ses-var {
+	100% {
+		width: 60%;
+	}
+}
+
+#cincuenta-menu {
+	animation: cin-var 3s forwards;
+}
+@keyframes cin-var {
+	100% {
+		width: 50%;
+	}
+}
+
+/*FIN SECCIÓN ANIMACIONES DE CARGA	*/

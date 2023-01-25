@@ -13,7 +13,6 @@ import { NavBarMenuComponent } from './components/nav-bar-menu/nav-bar-menu.comp
 
 import {HttpClientModule} from '@angular/common/http';
 
-
 @NgModule({
   declarations: [
     AppComponent,
