@@ -1,46 +1,15 @@
 <!-- Contact me -->
-
 <div class="container mt-4" id="contact_me">
-  
-    <h3 class="display-5 text-center">Contacto</h3>
-  
+  <h3 class="display-5 text-center">Contacto</h3>
     <div class="row text-center mt-3">
-  
-      <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+      <div class="col-sm-12 col-md-6 col-lg-3 mb-3" *ngFor="let redes of contactList" >
         <div class="card shadow">
-          <img src="./assets/Iconos/instagram.png" class="imgClassCard">
+          <img [src]="redes.img" class="imgClassCard">
           <div class="card-body">
-            <a href="#" class="btn btn-primary" target="_BLANK">Seguime en Instagram</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
-        <div class="card shadow">
-          <img src="./assets/Iconos/linkedin.png" class="imgClassCard">
-          <div class="card-body">
-            <a href="https://www.linkedin.com/in/christian-scornaienchi-831239248/" class="btn btn-primary" target="_BLANK">Seguime en Linkedin</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
-        <div class="card shadow">
-          <img src="./assets/Iconos/github.png" class="imgClassCard">
-          <div class="card-body">
-            <a href="https://github.com mx-3/Christianscorna" class="btn btn-primary" target="_BLANK">Seguime en GitHub</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
-        <div class="card shadow">
-          <img src="./assets/Iconos/facebook.png" class="imgClassCard">
-          <div class="card-body">
-            <a href="#" class="btn btn-primary" target="_BLANK">Seguime en Facebook</a>
+            <a [href]="redes.link" class="btn btn-primary" target="_BLANK">Seguime en {{redes.red}} </a>
           </div>
         </div>
       </div>
     </div>
   <br>
-  </div> 
+</div> 

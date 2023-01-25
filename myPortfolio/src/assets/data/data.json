@@ -42,5 +42,26 @@
         "description": "Actualmente me encuantro cursando el primer año de la carrera de Ingeniería en sistemas",
         "start": "01/04/2022",
         "end": "actualidad"
+    }],
+
+    "contact": [{
+        "red": "Instagram",
+        "img": "./assets/Iconos/instagram.png",
+        "link": "https://www.instagram.com"
+    },
+    {
+        "red": "Linkedin",
+        "img": "./assets/Iconos/linkedin.png",
+        "link": "https://www.linkedin.com/in/christian-scornaienchi-831239248/"
+    },
+    {
+        "red": "GitHub",
+        "img": "./assets/Iconos/github.png",
+        "link": "https://www.github.com"
+    },
+    {
+        "red": "Facebook",
+        "img": "./assets/Iconos/facebook.png",
+        "link": "https://www.facebook.com"
     }]
 }
