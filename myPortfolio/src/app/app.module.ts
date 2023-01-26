@@ -12,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavBarMenuComponent } from './components/nav-bar-menu/nav-bar-menu.component';
 
 import {HttpClientModule} from '@angular/common/http';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {HttpClientModule} from '@angular/common/http';
     SkillsComponent,
     ContactMeComponent,
     FooterComponent,
-    NavBarMenuComponent
+    NavBarMenuComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
