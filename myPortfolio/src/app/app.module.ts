@@ -11,8 +11,9 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
 import { FooterComponent } from './components/footer/footer.component';
 import { NavBarMenuComponent } from './components/nav-bar-menu/nav-bar-menu.component';
 
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LoginComponent } from './components/login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
