@@ -30,7 +30,7 @@
         "title": "",
         "img": "./assets/Imagenes/EMI.png",
         "career": "Curso de inglés",
-        "description": "Realicé y aprobé sastifactoriamente los 5 niveles que el departamento de idiomas ofrece para sus estudiantes",
+        "description": "Realicé y aprobé satisfactoriamente los 5 niveles de enseñanza del idioma Inglés que el departamento de idiomas ofrece para sus estudiantes",
         "start": "20/03/2017",
         "end": "30/11/2021"
     },
@@ -39,9 +39,33 @@
         "title": "",
         "img": "./assets/Imagenes/FDCE.png",
         "career": "Ingeniería en sistemas",
-        "description": "Actualmente me encuantro cursando el primer año de la carrera de Ingeniería en sistemas",
+        "description": "Actualmente me encuentro cursando el primer año de la carrera de Ingeniería en sistemas",
         "start": "01/04/2022",
         "end": "actualidad"
+    }],
+
+    "Skills": [{
+        "Frontend": [{
+            "name": "HTML",
+            "score": 90
+        },
+        {
+            "name": "CSS",
+            "score": 60
+        },
+        {
+            "name": "JavaScript",
+            "score": 50
+        }],
+        "Backend": [{
+            "name": "Java",
+            "score": 50
+        },
+        {
+            "name": "RUBY",
+            "score": 40
+        }
+    ]
     }],
 
     "contact": [{
