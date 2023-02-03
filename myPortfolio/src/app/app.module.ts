@@ -14,6 +14,7 @@ import { NavBarMenuComponent } from './components/nav-bar-menu/nav-bar-menu.comp
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { RouterModule } from '@angular/router';
+import { PortfolioService } from './services/portfolio.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { RouterModule } from '@angular/router';
     HttpClientModule,
     RouterModule
   ],
-  providers: [],
+  providers: [PortfolioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
