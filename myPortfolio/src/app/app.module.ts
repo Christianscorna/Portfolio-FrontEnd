@@ -9,12 +9,13 @@ import { StudiesComponent } from './components/studies/studies.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { NavBarMenuComponent } from './components/nav-bar-menu/nav-bar-menu.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { RouterModule } from '@angular/router';
-import { PortfolioService } from './services/portfolio.service';
+import { AdminComponent } from './components/admin/admin.component';
+import { HomeComponent } from './components/home/home.component';
+import { ProyectsComponent } from './components/proyects/proyects.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +26,10 @@ import { PortfolioService } from './services/portfolio.service';
     SkillsComponent,
     ContactMeComponent,
     FooterComponent,
-    NavBarMenuComponent,
     LoginComponent,
+    AdminComponent,
+    HomeComponent,
+    ProyectsComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,7 @@ import { PortfolioService } from './services/portfolio.service';
     HttpClientModule,
     RouterModule
   ],
-  providers: [PortfolioService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
