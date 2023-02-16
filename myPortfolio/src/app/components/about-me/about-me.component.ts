@@ -6,6 +6,7 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.css']
 })
+
 export class AboutMeComponent {
 
   constructor( private datosPortfolio: PortfolioService ) {}

@@ -87,5 +87,40 @@
         "red": "Facebook",
         "img": "./assets/Iconos/facebook.png",
         "link": "https://www.facebook.com"
-    }]
+    }],
+
+    "proyects": [{
+        "name": "Curso de HTML",
+        "imagen": "./assets/Imagenes/cursoDeHTML.png",
+        "url": "https://www.youtube.com/watch?v=kN1XP-Bef7w&t=2957s"
+    },
+
+    {
+        "name":"Curso de CSS",
+        "descripcion": "qwertyuiop",
+        "imagen": "./assets/Imagenes/cursoDeCSS.png",
+        "url": "https://www.youtube.com/watch?v=OWKXEJN67FE"
+    },
+
+    {
+        "name":"Curso de JavaScript - Junior level",
+        "descripcion": "qwertyuiop",
+        "imagen": "./assets/Imagenes/cursoDeJS_jr.png",
+        "url": "https://www.youtube.com/watch?v=z95mZVUcJ-E"
+    },
+
+    {
+        "name":"Curso de JavaScript - Mid level",
+        "descripcion": "qwertyuiop",
+        "imagen": "./assets/Imagenes/cursoDeJS_md.png",
+        "url": "https://www.youtube.com/watch?v=xOinGb2MZSk&t=1803s"
+    },
+
+    {
+        "name":"Curso de Python",
+        "descripcion": "qwertyuiop",
+        "imagen": "./assets/Imagenes/cursoDePython.png",
+        "url": "https://www.youtube.com/watch?v=nKPbfIU442g&t=1515s"
+    }
+]
 }
