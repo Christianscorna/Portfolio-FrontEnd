@@ -1,3 +1,4 @@
+<div class="cuerpo pb-3">
 <div class="container">
     <h2 class="display-2">Proyectos</h2>
     <p>Aun no he comenzado ningún proyecto nuevo... Pero me gustaría desarrollar mis propios videojugos</p>
@@ -6,7 +7,7 @@
 <div class="container">
     <h2 class="display-2">Cursos</h2>
     <p>¡Hola! Quería contarles sobre algunos cursos que he realizado. A continuación podrán encontrar una lista con el curso y una descripción y enlace para ir a ver si el curso te interesa. Espero que les sirva :)</p>
-    <div class="row" *ngFor="let propiedad of proyectList">
+    <div class="row targeta" *ngFor="let propiedad of proyectList">
         <div class="col-sm-12 col-md-3 col-lg-4 my-2" >
             <img [src]="propiedad.imagen" class="img-fluid">
         </div>
@@ -17,4 +18,6 @@
             <a [href]="propiedad.url">ir al curso</a>
         </div>
     </div>
+</div>
+
 </div>

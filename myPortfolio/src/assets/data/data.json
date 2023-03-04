@@ -91,34 +91,35 @@
 
     "proyects": [{
         "name": "Curso de HTML",
+        "descripcion": "Creo que todo empezo desde el dia que decidí ver este curso. Ahí fué cuando empecé a investigar y aprender cosas nuevas",
         "imagen": "./assets/Imagenes/cursoDeHTML.png",
         "url": "https://www.youtube.com/watch?v=kN1XP-Bef7w&t=2957s"
     },
 
     {
         "name":"Curso de CSS",
-        "descripcion": "qwertyuiop",
+        "descripcion": "Muy buen curso de css de la Mano de Lucas Dalto. Muy divertido y completo.",
         "imagen": "./assets/Imagenes/cursoDeCSS.png",
         "url": "https://www.youtube.com/watch?v=OWKXEJN67FE"
     },
 
     {
         "name":"Curso de JavaScript - Junior level",
-        "descripcion": "qwertyuiop",
+        "descripcion": "Acá se aprendieron un monton de cosas mas que nada relacionadas a las bases de la programacion, se desarrollaron pequeños módulos, ejem de una calculadora y se introduce ampliamente a los objetos.",
         "imagen": "./assets/Imagenes/cursoDeJS_jr.png",
         "url": "https://www.youtube.com/watch?v=z95mZVUcJ-E"
     },
 
     {
         "name":"Curso de JavaScript - Mid level",
-        "descripcion": "qwertyuiop",
+        "descripcion": "Aún no he terminado este curso, pero hasta por dónde voy muy bueno. Lo recomiendo muchísimo",
         "imagen": "./assets/Imagenes/cursoDeJS_md.png",
         "url": "https://www.youtube.com/watch?v=xOinGb2MZSk&t=1803s"
     },
 
     {
         "name":"Curso de Python",
-        "descripcion": "qwertyuiop",
+        "descripcion": "Aun no he realizado este curso pero como programador entusiasta me chusmeé algunas cosas ya que no puedo esperar para aprender a programar con python.",
         "imagen": "./assets/Imagenes/cursoDePython.png",
         "url": "https://www.youtube.com/watch?v=nKPbfIU442g&t=1515s"
     }

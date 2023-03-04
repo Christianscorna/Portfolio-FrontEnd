@@ -1,21 +1,11 @@
 .navLink {
-	border: 1px solid #fff;
-	border-radius: 10px;
-	opacity: 0.7;
-}
-
-.navLink:hover {
-	opacity: 1;
-}
-
-.login {
-	border: 1px solid #ffff56;
-	border-radius: 10px;
-}
-
-.login:hover {
-	background-color: #ffff56;
-	text-shadow: 0px 0px 10px #0a0a0a;
+	padding: 10px 20px;
+	margin: 0 5px;
+	color: #ffffff;
+	font-size: 1.2rem;
+	font-weight: bold;
+	border-radius: 3px;
+	transition: all 0.2s ease-in-out;
 }
 
 .carousel-item {
