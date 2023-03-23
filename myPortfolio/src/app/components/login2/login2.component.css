@@ -36,13 +36,3 @@ body {
     transform-origin:top bottom;
     color: #636FA4;
 }
-
-.divSpecial {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-p {
-    text-align: center;
-}

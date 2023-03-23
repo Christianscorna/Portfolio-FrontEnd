@@ -1,0 +1,64 @@
+<body>
+    <div class="fluid-container formulario py-2 mb-5">
+        <h3 class="display-3 text-center pt-3">¡Regístrate!</h3>
+    
+        <div class="col-sm-12 col-md-8 col-lg-8 mx-auto" id="hola">
+            
+            <form class="form" [formGroup]="form">
+            
+            <div class="form_group d-grid gap-2 col-sm-12 col-md-8 col-lg-8 mx-auto mb-4">
+                <input type="text" class="form_input" id="userName" placeholder=" " formControlName="name">
+                <label for="userName" class="label_group">Usuario:</label>
+                <div *ngIf="Name?.errors && Name?.touched">
+                    <p *ngIf="Name?.hasError('required')" class="text-danger">
+                        Campo requerido.
+                    </p>
+                    <p *ngIf="Name?.errors?.['minlength']" class="text-danger">
+                        Nombre de Usuario debe tener al menos 5 carácteres.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="form_group d-grid gap-2 col-sm-12 col-md-8 col-lg-8 mx-auto mb-4">
+                <input type="email" class="form_input" id="e-mail" placeholder=" " formControlName="email">
+                <label for="e-mail" class="label_group">Correo elctrónico:</label>
+                <div *ngIf="Email?.errors && Email?.touched">
+                    <p *ngIf="Email?.hasError('required')" class="text-danger">
+                        Campo requerido.
+                    </p>
+                    <p *ngIf="Email?.hasError('email')" class="text-danger">
+                        El formato de email es incorrecto.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="form_group d-grid gap-2 col-sm-12 col-md-8 col-lg-8 mx-auto mb-4">
+                <input type="password" class="form_input" id="pass" placeholder=" " formControlName="password">
+                <label for="pass" class="label_group">Contraseña:</label>
+                <div *ngIf="Password?.errors && Password?.touched">
+                    <p *ngIf="Password?.hasError('required')" class="text-danger">
+                        Campo requerido.
+                    </p>
+                    <p *ngIf="Password?.errors?.['minlength']" class="text-danger">
+                        La contraseña debe tener un mínimo 8 carácteres.
+                    </p>
+                </div>
+            </div>
+
+            <div class="form_group d-grid gap-2 col-sm-12 col-md-8 col-lg-8 mx-auto mb-4">
+                <input type="password" class="form_input" id="confirm-pass" placeholder=" " formControlName="confirmPassword">
+                <label for="confirm-pass" class="label_group">Confirmar contraseña:</label>
+                <div>
+                    <p class="text-danger">
+                        Las contraseñas no coinciden.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="d-grid gap-2 col-6 mx-auto mb-2">    
+                <button class="btn btn-success" routerLink="/admin">Ingresar</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>

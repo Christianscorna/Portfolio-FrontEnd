@@ -2,32 +2,30 @@
 <div class="fluid-container formulario py-2 mb-5">
     <h3 class="display-3 text-center pt-3">Iniciar sesión</h3>
 
-    <div class="col-sm-12 col-md-8 col-lg-8 mx-auto" id="hola">
+    <div class="col-sm-12 col-md-9 col-lg-9 mx-auto" id="hola">
         
-        <form action="" class="form">
+        <form action="" class="form" >
         
-        <div class="form_group d-grid gap-2 col-sm-12 col-md-8 col-lg-8 mx-auto mb-4">
+        <div class="form_group d-grid gap-2 col-sm-12 col-md-9 col-lg-8 mx-auto mb-4">
             <input type="text" class="form_input" id="userName" placeholder=" " required>
             <label for="userName" class="label_group">Usuario:</label>
         </div>
 
-        <div class="form_group d-grid gap-2 col-sm-12 col-md-8 col-lg-8 mx-auto mb-4">
-            <input type="email" class="form_input" id="e-mail" placeholder=" " required>
-            <label for="e-mail" class="label_group">Correo elctrónico:</label>
-        </div>
-
-        <div class="form_group d-grid gap-2 col-sm-12 col-md-8 col-lg-8 mx-auto mb-4">
+        <div class="form_group d-grid gap-2 col-sm-12 col-md-9 col-lg-8 mx-auto mb-4">
             <input type="password" class="form_input" id="pass" placeholder=" " required>
             <label for="pass" class="label_group">Contraseña:</label>
         </div>
 
-        <div class="d-grid gap-2 col-6 mx-auto mb-2">    
+        <div class="d-grid gap-2 col-5 mx-auto mb-2">    
             <button class="btn btn-success" routerLink="/admin">Ingresar</button>
         </div>
 
+        <div class="mx-auto divSpecial">
+            <p class="col-sm-8 col-md-6 col-lg-6" >¿todavía no te registraste? <a routerLink="/register">Registrarme aquí</a></p>
+            <router-outlet></router-outlet>
+        </div>
         </form>
     </div>
 
 </div>
-
 </body>
