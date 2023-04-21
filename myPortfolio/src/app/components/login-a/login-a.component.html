@@ -1,0 +1,12 @@
+	<h1 class="display-3 text-center my-3">Iniciar Sesión</h1>
+	<form action="/procesar_registro" method="post">
+		<label for="nombre_usuario">Nombre de usuario:</label>
+		<input type="text" id="nombre_usuario" name="nombre_usuario"><br>
+
+		<label for="contrasena">Contraseña:</label>
+		<input type="password" id="contrasena" name="contrasena"><br>
+
+		<input type="submit" value="Registrarse">
+
+		<p>¿Aún no te has registrado? <a routerLink="/register">Haz clic aquí</a> para registrarte.</p>
+	</form>

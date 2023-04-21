@@ -13,12 +13,12 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
 import { FooterComponent } from './components/footer/footer.component';
 
 import { HttpClientModule } from '@angular/common/http';
-import { LoginComponent } from './components/login/login.component';
 import { RouterModule } from '@angular/router';
 import { AdminComponent } from './components/admin/admin.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
-import { Login2Component } from './components/login2/login2.component';
+import { LoginAComponent } from './components/login-a/login-a.component';
+import { LoginBComponent } from './components/login-b/login-b.component';
 
 @NgModule({
   declarations: [
@@ -29,11 +29,11 @@ import { Login2Component } from './components/login2/login2.component';
     SkillsComponent,
     ContactMeComponent,
     FooterComponent,
-    LoginComponent,
     AdminComponent,
     HomeComponent,
     ProyectsComponent,
-    Login2Component,
+    LoginAComponent,
+    LoginBComponent,
   ],
   imports: [
     BrowserModule,

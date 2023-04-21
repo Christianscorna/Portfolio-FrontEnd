@@ -1,0 +1,30 @@
+<h2 class="display-3 text-center my-3">¡Regístrate!</h2>
+
+<form (ngSubmit)="onSubmit()" #registroForm="ngForm">
+  <div>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" [(ngModel)]="usuario.nombre" required>
+  </div>
+
+  <div>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" [(ngModel)]="usuario.apellido" required>
+  </div>
+
+  <div>
+    <label for="nombreUsuario">Nombre de usuario:</label>
+    <input type="text" id="nombreUsuario" name="nombreUsuario" [(ngModel)]="usuario.nombreUsuario" required>
+  </div>
+
+  <div>
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena" name="contrasena" [(ngModel)]="usuario.contrasena" required>
+  </div>
+
+  <div>
+    <label for="confirmarContrasena">Confirmar contraseña:</label>
+    <input type="password" id="confirmarContrasena" name="confirmarContrasena" [(ngModel)]="usuario.confirmarContrasena" required>
+  </div>
+
+  <button type="submit" [disabled]="!registroForm.form.valid || usuario.contrasena !== usuario.confirmarContrasena">Registrarse</button>
+</form>
