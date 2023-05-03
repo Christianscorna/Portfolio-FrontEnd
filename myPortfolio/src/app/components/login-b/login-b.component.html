@@ -1,29 +1,40 @@
 <h2 class="display-3 text-center my-3">¡Regístrate!</h2>
 
-<form (ngSubmit)="onSubmit()" #registroForm="ngForm">
+<form (ngSubmit)="onSubmit()" #registroForm="ngForm" [formGroup]="form">
   <div>
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" [(ngModel)]="usuario.nombre" required>
-  </div>
-
-  <div>
-    <label for="apellido">Apellido:</label>
-    <input type="text" id="apellido" name="apellido" [(ngModel)]="usuario.apellido" required>
-  </div>
-
-  <div>
-    <label for="nombreUsuario">Nombre de usuario:</label>
-    <input type="text" id="nombreUsuario" name="nombreUsuario" [(ngModel)]="usuario.nombreUsuario" required>
-  </div>
+    <label for="email">Correo electrónico</label>
+    <input type="email" id="email" name="email" [(ngModel)]="usuario.email" required formControlName="email">
+    <div *ngIf="Email?.errors && Email?.touched">
+      <p *ngIf="Email?.hasError('required')" class="text-danger">
+        Campo requerido.
+      </p>
+      <p *ngIf="Email?.hasError('email')" class="text-danger">
+        Formato de email inválido.
+      </p>
+    </div>
+  </div> 
 
   <div>
     <label for="contrasena">Contraseña:</label>
-    <input type="password" id="contrasena" name="contrasena" [(ngModel)]="usuario.contrasena" required>
+    <input type="password" id="contrasena" name="contrasena" [(ngModel)]="usuario.contrasena" required formControlName="contrasena">
+    <div *ngIf="Contrasena?.errors && Contrasena?.touched">
+      <p *ngIf="Contrasena?.hasError('required')" class="text-danger">
+        Campo requerido.
+      </p>
+      <p *ngIf="Contrasena?.hasError('minlength')" class="text-danger">
+        La contraseña debe tener al menos 4 carácteres.
+      </p>
+    </div>
   </div>
 
   <div>
     <label for="confirmarContrasena">Confirmar contraseña:</label>
-    <input type="password" id="confirmarContrasena" name="confirmarContrasena" [(ngModel)]="usuario.confirmarContrasena" required>
+    <input type="password" id="confirmarContrasena" name="confirmarContrasena" [(ngModel)]="usuario.confirmarContrasena" required formControlName="confirmarContrasena">
+    <div *ngIf="ConfirmarContrasena?.touched">
+      <p *ngIf="usuario.contrasena !== usuario.confirmarContrasena" class="text-danger">
+        Las contraseñas no coinciden.
+      </p>
+    </div>
   </div>
 
   <button type="submit" [disabled]="!registroForm.form.valid || usuario.contrasena !== usuario.confirmarContrasena">Registrarse</button>

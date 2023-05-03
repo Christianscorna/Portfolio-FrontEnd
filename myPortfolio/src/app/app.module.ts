@@ -14,11 +14,10 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { AdminComponent } from './components/admin/admin.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
-import { LoginAComponent } from './components/login-a/login-a.component';
 import { LoginBComponent } from './components/login-b/login-b.component';
+import { MenuNavBarComponent } from './components/menu-nav-bar/menu-nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -29,11 +28,10 @@ import { LoginBComponent } from './components/login-b/login-b.component';
     SkillsComponent,
     ContactMeComponent,
     FooterComponent,
-    AdminComponent,
     HomeComponent,
     ProyectsComponent,
-    LoginAComponent,
     LoginBComponent,
+    MenuNavBarComponent,
   ],
   imports: [
     BrowserModule,
